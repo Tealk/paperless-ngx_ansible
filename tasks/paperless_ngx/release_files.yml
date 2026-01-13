@@ -28,6 +28,8 @@
   loop: "{{ paperless_ngx_dir_force_permission_include | difference(paperless_ngx_dir_force_permission_exclude) }}"
 
 - name: Download and extract paperless-ngx release
+  when:
+    - not ansible_check_mode
   become: true
   ansible.builtin.unarchive:
     src: "{{ _release_download_url }}"
@@ -43,6 +45,8 @@
   delay: 60
 
 - name: Set file and directory permissions
+  when:
+    - not ansible_check_mode
   become: true
   ansible.builtin.shell:
     cmd: |
