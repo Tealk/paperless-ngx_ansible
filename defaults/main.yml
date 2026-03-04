@@ -254,7 +254,6 @@ paperless_ngx_jbig2enc_lossy: false
 
 paperless_ngx_conf_enable_flower:
 paperless_ngx_conf_enable_gpg_decryptor: false
-paperless_ngx_conf_enable_update_check: enable
 paperless_ngx_conf_audit_log_enabled: false
 
 paperless_ngx_conf_tika_enabled: false

@@ -403,8 +403,6 @@
       role_var: "{{ paperless_ngx_conf_bind_addr }}"
     - pngx_var: PAPERLESS_PORT
       role_var: "{{ paperless_ngx_conf_port }}"
-    - pngx_var: PAPERLESS_ENABLE_UPDATE_CHECK
-      role_var: "{{ paperless_ngx_conf_enable_update_check }}"
   no_log: "{{ not item.log | default(omit) }}"
   notify: Restart paperless completely
 

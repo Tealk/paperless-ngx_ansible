@@ -176,7 +176,6 @@ To save reading space a few abbreviations are used in the table down below:
 | `paperless_ngx_conf_enable_http_remote_user_api` | false | Y | Y |   | 2.5 |
 | `paperless_ngx_conf_enable_gpg_decryptor` | false | Y | Y |   | 2.12 |
 | `paperless_ngx_conf_enable_nltk` |1| Y | Y |   | 1.11 |
-| `paperless_ngx_conf_enable_update_check` |  | Y | Y | Will be removed in the future |   |
 | `paperless_ngx_conf_filename_date_order` | "" | Y | Y |   |   |
 | `paperless_ngx_conf_filename_format_remove_none` | false | Y | Y |   |   |
 | `paperless_ngx_conf_filename_format` | "" | Y | Y | If you want to use paperless variables, wrap them like so: {% raw %}{{ created_year_short }}-{{ correspondent }}-{{ title }}{% endraw %} |   |
